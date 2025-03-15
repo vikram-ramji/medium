@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://backend.vikramramji24.workers.dev"
