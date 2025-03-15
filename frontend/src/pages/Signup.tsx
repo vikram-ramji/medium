@@ -12,7 +12,7 @@ export const Signup = () => {
 
     useEffect(() => {
         navigate('/')
-    })
+    }, [navigate])
     
     const [postInputs, setPostInputs] = useState<SignupInput>({
         name: "",

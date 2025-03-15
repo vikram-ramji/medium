@@ -12,7 +12,7 @@ export const Signin = () => {
 
     useEffect(() => {
         navigate('/')
-    })
+    }, [navigate])
 
     const [postInputs, setPostInputs] = useState<SigninInput>({
         username: "",
