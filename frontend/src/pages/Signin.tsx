@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { AuthHeader } from "../components/AuthHeader"
 import { Quote } from "../components/Quote"
 import { SigninInput } from "@vikramiyer/medium-common"
@@ -9,10 +9,6 @@ import { useNavigate } from "react-router-dom"
 
 export const Signin = () => {
     const navigate = useNavigate()
-
-    useEffect(() => {
-        navigate('/')
-    }, [navigate])
 
     const [postInputs, setPostInputs] = useState<SigninInput>({
         username: "",
